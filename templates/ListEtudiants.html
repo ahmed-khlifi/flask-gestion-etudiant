@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th class="col">CIN</th>
+            <th class="col">Nom</th>
+            <th class="col">Prenom</th>
+            <th class="col">Niveau</th>
+            <th class="col">Filiere</th>
+            <th class="col">Age</th>
+            <th class="col">Niveau</th>
+            <th class="col">Filiere</th>
+            <th class="col">Groupe</th>
+            <th class="col">Desactiver</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for etudiant in etudiants %}
+        <tr>
+            {% for info in etudiant %}
+                <th>{{info}}</th>
+            {% endfor %}
+            <th>
+                <form action="/delete" method="POST">
+                    <input type="hidden" value={{etudiant[0]}} name="cin">
+                    <input type="submit" value="Desactiver" name="desactivateEtudiant">
+                </form>
+            </th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

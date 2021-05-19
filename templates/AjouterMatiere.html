@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h1 class="text-center">Ajouter Etudiant</h1>
+<form class="ajoutForm" method="POST" action="/AjouterMatiere">
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Code" name="codeMat">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Nom" name="nom">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Ensignant" name="ensignant">
+        </div>
+      </div>
+    <div class="row">
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Niveau" name="niveau">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Coef" name="coef">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control mb-3" placeholder="Nombre d'heures" name="heures">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      
+    
+  </form>
+
+{% endblock %}

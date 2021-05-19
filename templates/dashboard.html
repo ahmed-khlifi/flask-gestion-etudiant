@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h1 class="title">Espace administrateur</h1>
+<div class=""  id="dashboard">
+    <div>
+        <h2>Gere étudiants</h2>
+        <div class="GestionLink">
+            <a href="/AjouterEtudiant">Ajouter étudiant</a>
+            <a href="/ListEtudiants">Consulter étudiants</a>
+        </div>
+    </div>
+    <div>
+        <h2>Gere matieres</h2>
+        <div class="GestionLink">
+            <a href="/AjouterMatiere">Ajouter matiere</a>
+            <a href="/ListMatiere">Consulter matieres</a>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

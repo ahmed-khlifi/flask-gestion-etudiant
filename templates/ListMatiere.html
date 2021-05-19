@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block body %}
+<table class="table">
+    <thead>
+        <tr>
+          <th class="col">Code Matiere</th>
+          <th class="col">Matiere</th>
+          <th class="col">Nombre d'heures</th>
+          <th class="col">Nom d'ensignats</th>
+          <th class="col">Niveau</th>
+          <th class="col">Coefficient</th>
+          <th class="col">Supprimer</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        {% for matiere in matieres %}
+        <tr>
+            {% for info in matiere %}
+                <th>{{info}}</th>
+            {% endfor %}
+            <th>
+                <form action="/delete" method="POST">
+                    <input type="hidden" value={{matiere[0]}} name="codeMat">
+                    <input type="submit" value="Supprimer"  name="deleteMatiere">
+                </form>
+            </th>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+body {
+    background-color: #e9ecee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ajoutForm {
+    background-color: #fff;
+    
+}
+.title{
+    text-align: center;
+}
+#dashboard{
+    background-color: #fff;
+    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
+    color: #2978b5;
+}
+.GestionLink {
+    margin: 25px 0;
+}
+.GestionLink > a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #8ab6d6;
+    color: #fff;
+    transition: 0.3s ease all;
+}
+.GestionLink > a:hover {
+    background-color: #fff;
+    color: #8ab6d6;
+}
+nav {
+    padding: 20px 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #2978b5;
+    margin-right: 15px;
+}
+
